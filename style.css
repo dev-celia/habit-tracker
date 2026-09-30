@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f5efe6;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+#habit-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#habit-input {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #f4c2d0;
+    color: #1a1a1a;
+}
+
+#progress {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+#habit-list {
+    list-style: none;
+}
+#habit-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+#habit-list input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #f4c2d0;
+    cursor: pointer;
+}
+
+#habit-list li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.delete-btn {
+    margin-left: auto;
+    background: transparent;
+    color: #aaa;
+    padding: 0.2rem 0.6rem;
+}
+
+.delete-btn:hover {
+    background: #f4c2d0;
+    color: #1a1a1a;
+}
+button, input {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.progress-bar {
+    height: 10px;
+    background: #f5efe6;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0;
+    background: #f4c2d0;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}
+
+#empty-message {
+    text-align: center;
+    color: #aaa;
+    padding: 1.5rem 0;
+}
